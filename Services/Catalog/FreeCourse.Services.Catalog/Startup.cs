@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FreeCourse.Services.Catalog.Settings;
+using Microsoft.Extensions.Options;
 
 namespace FreeCourse.Services.Catalog
 {
@@ -27,6 +29,12 @@ namespace FreeCourse.Services.Catalog
         {
             services.AddAutoMapper(typeof(Startup));
             services.AddControllers();
+           
+            services.Configure<DatabaseSettings>(Configuration.GetSection("DatabaseSettings"));
+            services.AddSingleton<IDatabaseSettings>(sp =>
+            {
+                return sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FreeCourse.Services.Catalog", Version = "v1" });
