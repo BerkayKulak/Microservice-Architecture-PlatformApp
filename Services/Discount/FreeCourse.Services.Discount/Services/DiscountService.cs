@@ -14,7 +14,7 @@ namespace FreeCourse.Services.Discount.Services
         private readonly IConfiguration _configuration;
         private readonly IDbConnection _dbConnection;
 
-        public DiscountService(IConfiguration configuration, IDbConnection dbConnection)
+        public DiscountService(IConfiguration configuration)
         {
             _configuration = configuration;
             _dbConnection = new NpgsqlConnection(_configuration.GetConnectionString("PostgreSql"));

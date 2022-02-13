@@ -3,5 +3,6 @@ Services
 	-photostockAPI => http://localhost:5012
 	-basket => http://localhost:5013
 	-discount => http://localhost:5014
+	-order => http://localhost:5015
 	
 identityServer => http://localhost:5001
