@@ -10,6 +10,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FreeCourse.Services.Order.Application.Handlers;
+using FreeCourse.Services.Order.Infrastructure;
+using FreeCourse.Shared.Services;
+using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace FreeCourse.Services.Order.API
 {
@@ -25,6 +30,19 @@ namespace FreeCourse.Services.Order.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<OrderDbContext>(opt =>
+            {
+                opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), configure =>
+                {
+                    configure.MigrationsAssembly("FreeCourse.Services.Order.Infrastructure");
+                });
+            });
+
+            services.AddHttpContextAccessor();
+
+            services.AddScoped<ISharedIdentityService, SharedIdentityService>();
+
+            services.AddMediatR(typeof(CreateOrderCommandHandler).Assembly);
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
