@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
 using FreeCourse.Services.Basket.Services;
@@ -33,6 +34,8 @@ namespace FreeCourse.Services.Basket
         public void ConfigureServices(IServiceCollection services)
         {
             var requireAuthorizePolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub");// sub' u mapleme
 
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
