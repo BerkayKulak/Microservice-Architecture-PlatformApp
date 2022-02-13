@@ -10,7 +10,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FreeCourse.Services.Basket.Services;
 using FreeCourse.Services.Basket.Settings;
+using Microsoft.Extensions.Options;
 
 namespace FreeCourse.Services.Basket
 {
@@ -28,7 +30,19 @@ namespace FreeCourse.Services.Basket
         {
             services.Configure<RedisSettings>(Configuration.GetSection("RedisSettings"));
 
+            services.AddSingleton<RedisService>(sp =>
+            {
+                var redisSettings = sp.GetRequiredService<IOptions<RedisSettings>>().Value;
+
+                var redis = new RedisService(redisSettings.Host, redisSettings.Port);
+
+                redis.Connect();
+
+                return redis;
+            });
+
             services.AddControllers();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FreeCourse.Services.Basket", Version = "v1" });
