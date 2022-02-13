@@ -1,2 +1,4 @@
 Services
 	-calalogAPI => http://localhost:5011 => (http://localhost:5011/swagger/index.html)
+	-photostockAPI => http://localhost:5012
+identityServer => http://localhost:5001
