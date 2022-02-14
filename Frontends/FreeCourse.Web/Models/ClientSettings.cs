@@ -2,8 +2,8 @@
 {
     public class ClientSettings
     {
-        public string WebClient { get; set; }
-        public string WebClientForUser { get; set; }
+        public Client WebClient { get; set; }
+        public Client WebClientForUser { get; set; }
     }
 
     public class Client
