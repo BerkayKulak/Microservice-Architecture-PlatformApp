@@ -9,3 +9,4 @@ Services
 	
 identityServer => http://localhost:5001
 gateway => http://localhost:5000
+Web => http://localhost:5010
