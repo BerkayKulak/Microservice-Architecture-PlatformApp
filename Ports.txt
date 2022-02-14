@@ -5,5 +5,7 @@ Services
 	-discount => http://localhost:5014
 	-order => http://localhost:5015
 	-fakeypayment => http://localhost:5016
+
 	
 identityServer => http://localhost:5001
+gateway => http://localhost:5000
