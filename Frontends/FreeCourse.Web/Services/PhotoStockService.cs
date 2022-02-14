@@ -38,7 +38,7 @@ namespace FreeCourse.Web.Services
 
             var response = await _httpClient.PostAsync("photos", multipartContent);
 
-            if (response.IsSuccessStatusCode)
+            if (!response.IsSuccessStatusCode)
             {
                 return null;
             }
