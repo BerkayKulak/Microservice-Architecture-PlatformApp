@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FreeCourse.Shared.Services;
+using FreeCourse.Web.Extensions;
 using FreeCourse.Web.Handler;
 using FreeCourse.Web.Helpers;
 using FreeCourse.Web.Models;
@@ -45,27 +46,8 @@ namespace FreeCourse.Web
             services.AddScoped<ResourceOwnerPasswordTokenHandler>();
             services.AddScoped<ClientCredentialTokenHandler>();
 
-            services.AddHttpClient<IClientCredentialTokenService, ClientCredentialTokenService>();
-            services.AddHttpClient<IIdentityService, IdentityService>();
+            services.AddHttpClientServices(Configuration);
 
-            services.AddHttpClient<ICatalogService, CatalogService>(opt =>
-            {
-
-                opt.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.Catalog.Path}");
-            }).AddHttpMessageHandler<ClientCredentialTokenHandler>();
-
-            services.AddHttpClient<IPhotoStockService, PhotoStockService>(opt =>
-            {
-
-                opt.BaseAddress = new Uri($"{serviceApiSettings.GatewayBaseUri}/{serviceApiSettings.PhotoStock.Path}");
-            }).AddHttpMessageHandler<ClientCredentialTokenHandler>();
-
-
-
-            services.AddHttpClient<IUserService, UserService>(opt =>
-            {
-                opt.BaseAddress = new Uri(serviceApiSettings.IdentityBaseUri);
-            }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(
                 CookieAuthenticationDefaults.AuthenticationScheme,
