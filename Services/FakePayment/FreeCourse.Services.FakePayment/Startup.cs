@@ -35,15 +35,19 @@ namespace FreeCourse.Services.FakePayment
             {
                 x.UsingRabbitMq((context, cfg) =>
                 {
-                    cfg.Host(Configuration["RabbmitMQUrl"],"/", host =>
-                    {
-                        host.Username("guest");
-                        host.Password("guest");
-                    });
+                    cfg.Host(Configuration["RabbmitMQUrl"], "/", host =>
+                     {
+                         host.Username("guest");
+                         host.Password("guest");
+                     });
                 });
             });
 
+
+
             services.AddMassTransitHostedService();
+
+
 
             var requireAuthorizePolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
 
