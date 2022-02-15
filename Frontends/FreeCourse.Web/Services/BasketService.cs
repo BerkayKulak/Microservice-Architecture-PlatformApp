@@ -28,7 +28,7 @@ namespace FreeCourse.Web.Services
         {
             var response = await _httpClient.GetAsync("baskets");
 
-            if (response.IsSuccessStatusCode)
+            if (!response.IsSuccessStatusCode)
             {
                 return null;
             }
