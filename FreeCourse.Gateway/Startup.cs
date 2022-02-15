@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FreeCourse.Gateway.DelegateHandlers;
 using Microsoft.Extensions.Configuration;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
@@ -26,6 +27,7 @@ namespace FreeCourse.Gateway
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpClient<TokenExhangeDelegateHandler>();
             services.AddAuthentication().AddJwtBearer("GatewayAuthenticationScheme", options =>
             {
                 options.Authority = Configuration["IdentityServerURL"];
@@ -33,7 +35,7 @@ namespace FreeCourse.Gateway
                 options.RequireHttpsMetadata = false;
             });
 
-            services.AddOcelot();
+            services.AddOcelot().AddDelegatingHandler<TokenExhangeDelegateHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
