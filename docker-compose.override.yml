@@ -90,14 +90,14 @@ services:
       - "5012:80"
     volumes:
       - type: bind
-        source: C:\Users\f-cak\Desktop\photos
+        source: C:\Users\Excalibur\Desktop\photos
         target: /app/wwwroot/photos
   discount.api:
     container_name: discount.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - IdentityServerURL=http://identityserver.api
-      - "ConnectionStrings:PostgreSql=User ID=admin; Password=43795164825Fb; Server=discountdb; Port=5432;Database=discountdb;Integrated Security=true;Pooling=true"
+      - "ConnectionStrings:PostgreSql=User ID=postgres; Password=43795164825Fb; Server=discountdb; Port=5432;Database=discountdb;Integrated Security=true;Pooling=true"
     ports:
       - "5014:80"
     depends_on:
