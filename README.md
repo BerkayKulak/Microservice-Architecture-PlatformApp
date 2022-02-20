@@ -29,7 +29,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<img width="100%" src="https://user-images.githubusercontent.com/61355143/154842845-0b490a1b-65b2-4252-8b29-80187b0f935e.gif">
+<img width="100%" src="https://user-images.githubusercontent.com/61355143/154845749-53d1267b-0931-49de-b68f-03f167a285cf.gif">
 
 
 Here's why:
