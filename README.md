@@ -63,28 +63,13 @@ Microservice architecture, a single application when developing a modular struct
 
 ## You will find answers to the following questions
 
-- How do we develop a project with N-Layer Architecture?
-- How to use the Code First Approach with Entity Framework Core 5.0?
-- How do We Configure a Detailed Database with the Fluent API?
-- How do we apply a Generic Repository Design Pattern
-- How to implement a Unit of Work Design Pattern?
-- What can we do with Asynchronous Programming.
-- How do we implement Object-Oriented Programming in our project
-- How do we make Front-End Validations with Data Annotations
-- How do we implement Dependency Injection on Layered Architecture.
-- Is it necessary to write Extension Methods
-- What is the Result Structure
-- How do we use DTO (Data Transfer Object)
-- Use of the AutoMapper Library
-- How to Perform the Use of the AutoMapper Library
-- How to apply Paging, Sorting, Filtering to a our project.
-- How do we perform Image & File Upload Operations.
-- How do we set up the Authentication & Authorization mechanization.
-- How do we write javascript-based software such as Ajax, Jquery.
-- How do I integrate Toaster, DataTables, Trumbowyg, Select2.
-
-
-
+- How to develop microservice architecture
+- How to establish synchronous and asynchronous communication between microservices
+- How to implement OAuth 2.0 and OpenID Connect protocols in Microservice architecture
+- How to implement the Eventual Consistency model to ensure consistency in databases belonging to Microservices
+- How do we dockerize our microservices
+- How to create Docker Compose file
+- How to stand up as a container of various databases
 
 
 ### Built With
