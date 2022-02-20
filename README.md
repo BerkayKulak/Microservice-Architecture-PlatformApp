@@ -272,8 +272,9 @@ Web => http://localhost:5010
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
-# Go into the Blogesque.Mvc
-$ cd \Blogesque\Blogesque.Mvc
+# Go into the Solution Explorer
+$ cd \Microservice-Architecture-PlatformApp
+$ Properties => Multiple Startup Projects and all projects must be selected.
 
 # Run the app
 $ dotnet run
