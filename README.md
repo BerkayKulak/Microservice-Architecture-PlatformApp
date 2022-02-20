@@ -54,6 +54,7 @@ Microservice architecture, a single application when developing a modular struct
 - The latest or most suitable technology can be used to meet the requirements. Each service may use a different language or a different database. Each different feature can be realized by a different team using a different technology, regardless of other features.
 
 <img width="100%" src="https://user-images.githubusercontent.com/61355143/154846165-34e2b5d9-34b2-49e3-920a-7f475d726272.jpeg">
+
 - All services should be divided into different microservices according to their area, tasks and characteristics.Technology Diversity - Different languages and technologies can be used when developing different services of the same project.
 - These microservices have their own load balancing and application environments to perform their functions, and must also store data in their own databases.
 - All microservices must communicate with each other via REST or Message Bus. Both can be used at the same time.
