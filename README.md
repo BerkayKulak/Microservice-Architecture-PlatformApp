@@ -38,6 +38,7 @@ Microservice architecture, a single application when developing a modular struct
 
 - Microservices can work on different machines, and all services should be able to communicate with each other on their own. A new service must be developed and deployable without causing changes to other services. Independent Deployment - Services can be deployed separately on any platform, independently of each other.
 - Microservices should be deployed in an automated manner, going through the necessary stages (Unit Tests, Integration Tests, Sonarqube, Automation Tests). This mechanism improves the quality of the project.
+<img width="100%" src="https://user-images.githubusercontent.com/61355143/154846072-2f67a16a-6f9c-4435-bd13-f6165ae60698.png">
 - Each service should be able to be independently developed, tested, deployed. Thus, the quality and flexibility of the application increases.
 - Independent Development - The entire microservice can be easily developed according to its functionality.
 - The problem with any service does not affect other services, so users will be able to use other services.
