@@ -77,34 +77,31 @@ Microservice architecture, a single application when developing a modular struct
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2019)
-* [MVC](https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-6.0)
-* [AJAX](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started)
-* [Jquerry](https://jquery.com/)
+* [MongoDB](https://www.mongodb.com/)
+* [Redis](https://redis.io/)
+* [PostgreSQL](https://www.postgresql.org/)
+* [Web API](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-6.0&tabs=visual-studio)
+* [MVC](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started)
 * [Bootstrap](https://getbootstrap.com/)
 
 ### Technologies and Methods
 
-- Developing a Project With N Layered Architecture
-- Entity Framework Core 5.0 Code First
-- Database Configurations With Fluent API
-- Generic Repository Pattern
-- Unit of Work Pattern
-- Async Programming
-- OOP
-- Dependency Injection In N Layered Architecture
-- Extension Methods
-- Custom Result Structure
-- DTO (Data Transfer Object)
-- AutoMapper AutoMapper Library
-- MD5 Password Hashing
-- SHA512 Password Hashing
-- Paging, Sorting, Filtering
-- LINQ
-- File & Image Upload
-- User Management System with Identity
-- Ajax, Jquerry, Jquerry UI
-- Sweet Alert2, Toastr, DataTables, Trumbowyg, Select2
-- Bootstrap 4.5
+- MongoDB (Database)
+- One-To-Many/One-To-One Relation
+- RedisDB(Database)
+- PostgreSQL(Database)
+- Sql Server(Database)
+- Domain Driven Design
+- CQRS (MediatR Libarary)
+- API Gateway - Ocelot Library
+- RabbitMQ 
+- MassTransit Library
+- Generate a token/refreshToken
+- Protecting our microservices with Access Token
+- Building a structure in accordance with the OAuth 2.0/OpenID Connect protocols
+- Docker & Docker Compose
+- IdentityServer4
+- JWT 
 
 
 
