@@ -30,6 +30,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <img width="100%" src="https://user-images.githubusercontent.com/61355143/154845749-53d1267b-0931-49de-b68f-03f167a285cf.gif">
+<img width="100%" src="https://user-images.githubusercontent.com/61355143/154845785-fddd6482-cfbc-4e93-a07c-29adac9fefd2.gif">
 
 
 Here's why:
