@@ -116,48 +116,41 @@ This section should list any major frameworks/libraries used to bootstrap your p
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* dotnet Blogesque.Data.csproj
+* dotnet FreeCourse.Web.csproj
   ```sh
-   <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.14" />
-   <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.14" />
-   <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.14">
-   <PrivateAssets>all</PrivateAssets>
-   <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-   </PackageReference>
-   <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.14" />
-   <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.14">
-   <PrivateAssets>all</PrivateAssets>
-   <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-   </PackageReference>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.6" />
+    <PackageReference Include="IdentityModel.AspNetCore" Version="3.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="6.10.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
   ```
   
-* dotnet Villagenix.Client.csproj
+* dotnet FreeCourse.Gateway.csproj
   ```sh
-  <PackageReference Include="Blazored.LocalStorage" Version="3.0.0" />
-  <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="5.0.14" />
-  <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.0" />
-  <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.0" />
-  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-  <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+    <PackageReference Include="IdentityModel" Version="5.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
+    <PackageReference Include="Ocelot" Version="17.0.0" />
   ```
   
-* dotnet Blogesque.Entities.csproj
+* dotnet FreeCourse.IdentityServer.csproj
   ```sh
-  <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="5.0.14" />
+    <PackageReference Include="IdentityServer4.AspNetIdentity" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+    <PrivateAssets>all</PrivateAssets>
+    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.5" />
   ```
-* dotnet Blogesque.Mvc.csproj
+* dotnet FreeCourse.Services.Basket.csproj
   ```sh
-  <PackageReference Include="AutoMapper" Version="11.0.1" />
-  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
-  <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.14" />
-  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.14">
-  <PrivateAssets>all</PrivateAssets>
-  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-  </PackageReference>
-  <PackageReference Include="NLog" Version="4.7.13" />
-  <PackageReference Include="NLog.Web.AspNetCore" Version="4.14.0" />
-  <PackageReference Include="NToastNotify" Version="7.0.0" />
-  <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
+    <PackageReference Include="StackExchange.Redis" Version="2.2.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   ```  
   
 * dotnet Blogesque.Services.csproj
@@ -167,16 +160,52 @@ This is an example of how to list things you need to use the software and how to
   <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
   ```  
   
-* dotnet Blogesque.Shared.csproj
+* dotnet FreeCourse.Services.Catalog.csproj
   ```sh
-  <PackageReference Include="LinqKit.Microsoft.EntityFrameworkCore" Version="5.1.0" />
-  <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
-  <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
-  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.14" />
-  <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="5.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="MassTransit" Version="7.3.1" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
+    <PackageReference Include="MongoDB.Driver" Version="2.12.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   ```  
- 
+ * dotnet FreeCourse.Services.Discount.csproj
+  ```sh
+    <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
+    <PackageReference Include="Npgsql" Version="5.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  ```
 
+ * dotnet FreeCourse.Services.FakePayment.csproj
+  ```sh
+	  <PackageReference Include="MassTransit" Version="7.3.1" />
+	  <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
+	  <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.1" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  ```
+  
+  * dotnet FreeCourse.Services.Order.API.csproj
+  ```sh
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.4">
+    <PrivateAssets>all</PrivateAssets>
+    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.4">
+    <PrivateAssets>all</PrivateAssets>
+    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  ```
+  
+  * dotnet FreeCourse.Services.Order.API.csproj
+  ```sh
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  ```
 
 
 ### Installation
