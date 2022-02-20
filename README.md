@@ -178,7 +178,7 @@ This is an example of how to list things you need to use the software and how to
   <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   ```
 
- * dotnet FreeCourse.Services.FakePayment.csproj
+* dotnet FreeCourse.Services.FakePayment.csproj
   ```sh
   <PackageReference Include="MassTransit" Version="7.3.1" />
   <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
