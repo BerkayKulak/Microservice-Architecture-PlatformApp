@@ -133,24 +133,24 @@ This is an example of how to list things you need to use the software and how to
   
 * dotnet FreeCourse.IdentityServer.csproj
   ```sh
-    <PackageReference Include="IdentityServer4.AspNetIdentity" Version="4.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="3.1.5" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
-    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.5" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.5" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
-    <PrivateAssets>all</PrivateAssets>
-    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.5" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.5" />
+  <PackageReference Include="IdentityServer4.AspNetIdentity" Version="4.0.0" />
+  <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="3.1.5" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+  <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+  <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.5" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.5" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+  <PrivateAssets>all</PrivateAssets>
+  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+  </PackageReference>
+  <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.5" />
+  <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.5" />
   ```
 * dotnet FreeCourse.Services.Basket.csproj
   ```sh
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
-    <PackageReference Include="StackExchange.Redis" Version="2.2.4" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
+  <PackageReference Include="StackExchange.Redis" Version="2.2.4" />
+  <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   ```  
   
 * dotnet Blogesque.Services.csproj
@@ -180,10 +180,10 @@ This is an example of how to list things you need to use the software and how to
 
  * dotnet FreeCourse.Services.FakePayment.csproj
   ```sh
-	  <PackageReference Include="MassTransit" Version="7.3.1" />
-	  <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
-	  <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.1" />
-	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
+    <PackageReference Include="MassTransit" Version="7.3.1" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   ```
   
