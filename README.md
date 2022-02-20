@@ -43,11 +43,13 @@ Microservice architecture, a single application when developing a modular struct
 - Independent Development - The entire microservice can be easily developed according to its functionality.
 - The problem with any service does not affect other services, so users will be able to use other services.
 - Error Isolation — A problem that will occur on any service of the project, because it will not affect other services of the project, the system will still work.
+<img width="100%" src="https://user-images.githubusercontent.com/61355143/154846116-66091745-8aec-4527-ad6e-a9354ca8ee27.png">
 - The problem can be eliminated by multiplexing the service under traffic without requiring the entire system to scale the traffic that will occur on any service.
 - Scalable - Each component is scalable to its own needs, there is no need to scale all components.
 - Each developer should be able to independently develop a service of their own interest, develop a new service on their own, and these services should be deployable without affecting other services.
 - When development is performed for a service, the development on that service should not affect the entire project so that other features should still be operational.
 - The latest or most suitable technology can be used to meet the requirements. Each service may use a different language or a different database. Each different feature can be realized by a different team using a different technology, regardless of other features.
+<img width="100%" src="https://user-images.githubusercontent.com/61355143/154846165-34e2b5d9-34b2-49e3-920a-7f475d726272.jpeg">
 - All services should be divided into different microservices according to their area, tasks and characteristics.Technology Diversity - Different languages and technologies can be used when developing different services of the same project.
 - These microservices have their own load balancing and application environments to perform their functions, and must also store data in their own databases.
 - All microservices must communicate with each other via REST or Message Bus. Both can be used at the same time.
