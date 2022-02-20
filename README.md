@@ -246,6 +246,25 @@ _Below is an example of how you can instruct your audience on installing and set
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+## Ports
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+Services
+	-calalogAPI => http://localhost:5011 => (http://localhost:5011/swagger/index.html)
+	-photostockAPI => http://localhost:5012
+	-basket => http://localhost:5013
+	-discount => http://localhost:5014
+	-order => http://localhost:5015
+	-fakeypayment => http://localhost:5016
+
+	
+identityServer => http://localhost:5001
+gateway => http://localhost:5000
+Web => http://localhost:5010
+
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
