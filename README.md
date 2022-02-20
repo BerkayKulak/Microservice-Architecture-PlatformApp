@@ -162,13 +162,13 @@ This is an example of how to list things you need to use the software and how to
   
 * dotnet FreeCourse.Services.Catalog.csproj
   ```sh
-  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
-  <PackageReference Include="MassTransit" Version="7.3.1" />
-  <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
-  <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.1" />
-  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
-  <PackageReference Include="MongoDB.Driver" Version="2.12.1" />
-  <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+ <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+ <PackageReference Include="MassTransit" Version="7.3.1" />
+ <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
+ <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.1" />
+ <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
+ <PackageReference Include="MongoDB.Driver" Version="2.12.1" />
+ <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   ```  
  * dotnet FreeCourse.Services.Discount.csproj
   ```sh
