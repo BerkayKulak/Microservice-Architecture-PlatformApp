@@ -248,8 +248,6 @@ _Below is an example of how you can instruct your audience on installing and set
 
 ## Ports
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
 ```bash
 Services
 	-calalogAPI => http://localhost:5011 => (http://localhost:5011/swagger/index.html)
@@ -263,6 +261,40 @@ Services
 identityServer => http://localhost:5001
 gateway => http://localhost:5000
 Web => http://localhost:5010
+
+```
+## launchSettings.json
+
+```bash
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:58267",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "FreeCourse.Web": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5010",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
+
 
 ```
 
@@ -289,9 +321,9 @@ $ dotnet run --project ./projects/proj1/proj1.csproj
 <!-- ROADMAP -->
 ## Bug / Feature Request
 
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/BerkayKulak/Blogesque/issues/new) by including your search query and the expected result.
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/BerkayKulak/Microservice-Architect) by including your search query and the expected result.
 
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/BerkayKulak/Blogesque/issues/new). Please include sample queries and their corresponding results.
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/BerkayKulak/Microservice-Architect). Please include sample queries and their corresponding results.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
