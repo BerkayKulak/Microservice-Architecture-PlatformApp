@@ -361,6 +361,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Berkay Kulak - (https://www.linkedin.com/in/berkay-kulak-3442311b1/) - kulakberkay15@gmail.com
 
-Project Link:   (https://github.com/BerkayKulak/Blogesque)
+Project Link:   (https://github.com/BerkayKulak/Microservice-Architecture-PlatformApp)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
