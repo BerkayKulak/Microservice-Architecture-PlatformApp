@@ -212,22 +212,28 @@ This is an example of how to list things you need to use the software and how to
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
+### Installation Requirements
+
+- https://dbeaver.com/
+- https://www.docker.com/products/docker-desktop
+
 
 1. Clone the repo
    ```sh
-   https://github.com/BerkayKulak/Blogesque.git
+   https://github.com/BerkayKulak/Microservice-Architecture-PlatformApp.git
    ```
 2. Update Nuget packages
    ```sh
    dotnet tool update <PACKAGE_ID> -g|--global
    ```
-3. Add Migration
+3. Install Identity Server
    ```js
-   dotnet ef migrations add InitialCreate
+   dotnet new -i identityserver4.templates
    ```
-4. Update Database
+4. Directory File 
    ```js
-   dotnet ef database update
+   cd ..\IdentityServer\FreeCourse.IdentityServer
+   dotnet new is4aspid --name [NAME]
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
