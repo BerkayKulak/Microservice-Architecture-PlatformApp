@@ -34,13 +34,24 @@
 
 
 Here's why:
-ASP.NET Core MVC with controllers and views. Razor Pages is a new alternative in ASP.NET Core, a page-based programming model that makes building web UI easier and more productive. We recommend you try the Razor Pages tutorial before the MVC version. 
+Microservice architecture, a single application when developing a modular structure, each one should be considered as a small service, and each service has their own business and communications work, can make very complex and non-an approach that has the mechanisms of addiction to other services. These services are focused on a single job for which they are responsible and have an automated deployment mechanism that can work independently. It should be quite free from centralized management mechanisms. It can be developed in different programming languages and different database technologies can be used.
 
-- Easier to follow.
-- Covers more features.
-- Preferred approach for new app development.
+- Microservices can work on different machines, and all services should be able to communicate with each other on their own. A new service must be developed and deployable without causing changes to other services. Independent Deployment - Services can be deployed separately on any platform, independently of each other.
+- Microservices should be deployed in an automated manner, going through the necessary stages (Unit Tests, Integration Tests, Sonarqube, Automation Tests). This mechanism improves the quality of the project.
+- Each service should be able to be independently developed, tested, deployed. Thus, the quality and flexibility of the application increases.
+- Independent Development - The entire microservice can be easily developed according to its functionality.
+- The problem with any service does not affect other services, so users will be able to use other services.
+- Error Isolation — A problem that will occur on any service of the project, because it will not affect other services of the project, the system will still work.
+- The problem can be eliminated by multiplexing the service under traffic without requiring the entire system to scale the traffic that will occur on any service.
+- Scalable - Each component is scalable to its own needs, there is no need to scale all components.
+- Each developer should be able to independently develop a service of their own interest, develop a new service on their own, and these services should be deployable without affecting other services.
+- When development is performed for a service, the development on that service should not affect the entire project so that other features should still be operational.
+- The latest or most suitable technology can be used to meet the requirements. Each service may use a different language or a different database. Each different feature can be realized by a different team using a different technology, regardless of other features.
+- All services should be divided into different microservices according to their area, tasks and characteristics.Technology Diversity - Different languages and technologies can be used when developing different services of the same project.
+- These microservices have their own load balancing and application environments to perform their functions, and must also store data in their own databases.
+- All microservices must communicate with each other via REST or Message Bus. Both can be used at the same time.
+- All functions performed by Microservices must be passable to clients via the API Gateeway. All internal end-points are connected to the API Gateway. Thus, anyone who connects to the API Gateway should be able to connect to the entire system automatically.
 
-With a layered architecture, applications can enforce restrictions on which layers can communicate with other layers. This architecture helps to achieve encapsulation. When a layer is changed or replaced, only those layers that work with it should be impacted. By limiting which layers depend on which other layers, the impact of changes can be mitigated so that a single change doesn't impact the entire application.
 
 ## You will find answers to the following questions
 
